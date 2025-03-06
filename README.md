@@ -8,7 +8,7 @@ This project is a **self-contained document scanning and matching system** with 
 **Credit System** (20 free scans/day, admin approval for extra credits)  
 **Document Scanning & Matching** (Basic & AI-based matching using FAISS & BERT)  
 **Admin Dashboard** (Scans per user, most scanned topics, credit usage statistics)  
-**Multi-user Support** (Session-based authentication & JWT integration)  
+**Multi-user Support** (Session-based authentication)  
 **Activity Logs** (Track user actions)  
 **Automated Credit Reset** (Daily reset at midnight)  
 **Export Reports** (Download scan history as a text file)  
