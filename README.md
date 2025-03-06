@@ -19,7 +19,7 @@ This project is a **self-contained document scanning and matching system** with 
 
 ### Backend:
 - **Python (Flask)**
-- **Flask Session & JWT** for authentication
+- **Flask Session** for authentication
 - **SentenceTransformers (BERT-based embeddings)**
 - **FAISS (Efficient similarity search)**
 - **TF-IDF for basic text matching**
