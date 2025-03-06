@@ -3,6 +3,9 @@
 The project uses a **document matching system** where uploaded documents are compared against **reference documents** stored in the backend. To test the system effectively, follow these steps:
 
 ---
+### Creating the missing folders
+- Since GitHub, automatically removes the empty folder, user needs to create **uploads** and **extracted_texts** in **backend/** directory.
+- After creating these folders, follow the instructions below to test the functionality.
 
 ### **1️ Understanding Reference Documents & Test File**
 -  **Reference Documents**: Located in `backend/storage/reference_docs`. These are the **source documents** used for matching.
@@ -49,4 +52,4 @@ If you want to **test a new document**, follow these steps:
 - **Higher Similarity Requires Relevant Documents**: If you want **higher similarity scores**, add **relevant** or **overlapping** documents to `reference_docs`.  
 - **Supported File Formats**: `.txt`, `.docx`, `.pdf`, `.jpg`, `.png`.
 
-Now you are ready to **test and verify document matching results** using the Test File! 🚀
+Now you are ready to **test and verify document matching results** using the Test File!
