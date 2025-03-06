@@ -1,0 +1,166 @@
+15-213 Recitation 15: Final Exam Preparation
+ 25 April 2016
+ Ralf Brown and the 15-213 staff
+Agenda
+ Reminders
+ Final Exam Review
+ Fall 2012 exam
+Reminders
+ Proxy lab is due tomorrow!
+ NO GRACE DAYS
+ Penalty late days are allowed
+ We will test your proxy manually
+ We will read your code
+ correctness: race conditions, robustness
+ style: write clean, well-documented, 
+modularized code – make it shine!
+ Final exam is next week
+ Image: flickr user Recon Cycles   CC-BY 2.0
+Final Exam Details
+ May 2 through 5
+ sign-ups are open
+ Eight to ten problems
+ nominal time is 90-120 minutes, but you get five hours
+ problems cover material from the entire semester
+ Notes
+ you are allowed two 8.5x11 double-sided sheets of notes
+ no pre-worked problems allowed
+Fall 2012 Final Exam – Multiple Choice (1)
+ Each thread has its own _______.
+ heap
+ stack
+ global values
+ text data
+ Simply decreasing the size of block 
+headers used internally by malloc:
+ decreases internal fragmentation
+ increases internal fragmentation
+ decreases external fragmentation
+ increases external fragmentation
+Fall 2012 Final Exam – Multiple Choice (1)
+ Each thread has its own _______.
+ heap
+ stack
+ global values
+ text data
+ Simply decreasing the size of block 
+headers used internally by malloc:
+ decreases internal fragmentation
+ increases internal fragmentation
+ decreases external fragmentation
+ increases external fragmentation
+Fall 2012 Final Exam – Multiple Choice (2)
+ Which of the following sentences 
+about reader-writer locks is not 
+true?
+ Many readers can hold the same 
+rwlock at the same time
+ Two writers cannot hold the same 
+rwlock at the same time
+ Many readers and exactly one 
+writer can hold the same rwlock at 
+the same time
+ An rwlock can be used as a mutex
+ Which of the following is the 
+correct ordering (left-to-right) of a 
+file's compilation cycle?
+ foo.c -> foo.o -> foo.s -> foo
+ foo -> foo.s -> foo.o -> foo.c
+ foo.c -> foo.s -> foo -> foo.o
+ foo.c -> foo.s -> foo.o -> foo
+Fall 2012 Final Exam – Multiple Choice (2)
+ Which of the following sentences 
+about reader-writer locks is not 
+true?
+ Many readers can hold the same 
+rwlock at the same time
+ Two writers cannot hold the same 
+rwlock at the same time
+ Many readers and exactly one 
+writer can hold the same rwlock 
+at the same time
+ Which of the following is the 
+correct ordering (left-to-right) of a 
+file's compilation cycle?
+ foo.c -> foo.o -> foo.s -> foo
+ foo -> foo.s -> foo.o -> foo.c
+ foo.c -> foo.s -> foo -> foo.o
+ foo.c -> foo.s -> foo.o -> foo
+ An rwlock can be used as a mutex
+Fall 2012 Final Exam – Multiple Choice (3)
+ Suppose an int A is stored at virtual 
+address 0xff987cf0, while another 
+int B is stored at virtual address 
+0xff987d98.  If the size of a page is 
+0x1000 bytes, then A's physical 
+address is numerically less than B's 
+physical address.
+ always true
+ always false
+ sometimes true, sometimes false
+ Assuming no errors, which of the 
+following functions returns exactly 
+once?
+ fork()
+ execve()
+ exit()
+ longjmp()
+ waitpid()
+ not enough information
+Fall 2012 Final Exam – Multiple Choice (3)
+ Suppose an int A is stored at virtual 
+address 0xff987cf0, while another 
+int B is stored at virtual address 
+0xff987d98.  If the size of a page is 
+0x1000 bytes, then A's physical 
+address is numerically less than B's 
+physical address.
+ always true
+ always false
+ sometimes true, sometimes false
+ Assuming no errors, which of the 
+following functions returns exactly 
+once?
+ returns twice
+ fork()
+ execve()
+ exit()
+ longjmp()
+ waitpid()
+ not enough information
+Fall 2012 Final Exam – Multiple Choice (4)
+ On a 64-bit system, which of the 
+following C expressions is 
+equivalent to the C expression 
+(x[2]+4)[3] ?  Assume x is declared 
+as int **x.
+ *((*(x+16)) + 28)
+ *((*(x + 2)) + 7)
+ **(x * 28)
+ *(((*x) + 2) + 7
+ When can short counts occur?
+ when an EOF is encountered 
+during a read
+ when a short int is used as a counter
+ when writing to disk files
+ when the kernel runs out of kernel 
+memory
+ (**(x + 2) + 7)
+Fall 2012 Final Exam – Multiple Choice (4)
+ On a 64-bit system, which of the 
+following C expressions is 
+equivalent to the C expression 
+(x[2]+4)[3] ?  Assume x is declared 
+as int **x.
+ *((*(x+16)) + 28)
+ *((*(x + 2)) + 7)
+ **(x * 28)
+ *(((*x) + 2) + 7
+ When can short counts occur?
+ when an EOF is encountered 
+during a read
+ when a short int is used as a counter
+ when writing to disk files
+ when the kernel runs out of kernel 
+memory
+ (**(x + 2) + 7)

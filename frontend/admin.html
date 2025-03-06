@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Manage Credits</title>
+    <link rel="stylesheet" href="styles/admin.css">
+    <script defer src="scripts/admin.js"></script>
+</head>
+<body>
+    <h2>Admin Panel - Manage Credits</h2>
+
+    <h3>Pending Credit Requests</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Requested Credits</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="creditRequestsTable">
+            <!-- Credit requests will be dynamically added here -->
+        </tbody>
+    </table>
+<button onclick="backToDashboard()">Back to Dashboard</button>
+</body>
+</html>

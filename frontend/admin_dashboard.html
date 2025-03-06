@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin Analytics Dashboard</title>
+    <link rel="stylesheet" href="styles/admin_dashboard.css">
+    <script defer src="scripts/admin_dashboard.js"></script>
+</head>
+<body>
+    <h2>Admin Analytics Dashboard</h2>
+    
+    <h3>Scans Per User</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Scans</th>
+            </tr>
+        </thead>
+        <tbody id="scansPerUser"></tbody>
+    </table>
+
+    <h3>Most Scanned Documents</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Document Name</th>
+                <th>Scan Count</th>
+            </tr>
+        </thead>
+        <tbody id="mostScannedDocuments"></tbody>
+    </table>
+
+    <h3>Most Scanned Topics</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Keyword</th>
+            </tr>
+        </thead>
+        <tbody id="topScannedTopics"></tbody>
+    </table>
+
+    <h3>Credit Usage Per User</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Credits Used</th>
+            </tr>
+        </thead>
+        <tbody id="creditUsage"></tbody>
+    </table>
+
+    <button onclick="window.location.href='admin.html'">Back to Admin Panel</button>
+</body>
+</html>

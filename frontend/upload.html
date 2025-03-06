@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Upload Document</title>
+    <link rel="stylesheet" href="styles/upload.css">
+    <script defer src="scripts/upload.js"></script>
+</head>
+<body>
+    <h2>Upload Document for AI-Based Matching</h2>
+    <input type="file" id="documentUpload">
+    <button onclick="uploadAndMatchDocument()">Upload & Match</button>
+    <p id="scanStatus"></p>
+
+    <h3>Matching Results:</h3>
+    <pre id="matchResults"></pre>
+
+    <button onclick="goBack()">Back to Dashboard</button>
+</body>
+</html>

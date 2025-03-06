@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Dashboard</title>
+    <script defer src="scripts/dashboard.js"></script>
+    <link rel="stylesheet" href="styles/dashboard.css">
+</head>
+<body>
+    <h2>Welcome, <span id="username"></span> (<span id="userRole"></span>)</h2>
+    <p>Your Credits: <span id="credits"></span></p>
+
+    <!-- Scan Document Button (Users Only) -->
+    <div id="scanDocumentSection">
+        <button onclick="redirectToUpload()">Scan Document</button>
+    </div>
+
+    <!-- Credit Request Section (Visible only for Normal Users) -->
+    <div id="userOptions">
+        <h3>Request Additional Credits</h3>
+        <input type="number" id="creditAmount" placeholder="Enter amount">
+        <button onclick="requestCredits()">Request Credits</button>
+        <p id="creditStatus"></p>
+    </div>
+
+    <!-- Admin Redirect Button -->
+    <div id="admin-btns">
+    <button id="manageCreditsBtn" style="display: none;" onclick="redirectToAdmin()">Manage Credit Requests</button>
+
+    <button id="viewAnalyticsBtn" style="display: none;" onclick="seeAdminAnalytics()">View Analytics</button>
+    </div>
+
+    <!-- Past Scans (Users Only) -->
+<div id="pastScanSection">
+    <h3>Your Past Scans</h3>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Matched Document</th>
+                    <th>Matched Result</th>
+                </tr>
+            </thead>
+            <tbody id="scanHistory">
+                <tr><td colspan="2">No scan history found.</td></tr>
+            </tbody>
+        </table>
+        <button id="scan-download-btn" onclick="downloadScanHistory()">Download Report</button>
+    </div>
+</div>
+
+
+    <button onclick="logout()">Logout</button>
+</body>
+</html>

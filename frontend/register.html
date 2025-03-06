@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="styles/auth.css">
+    <script defer src="scripts/auth.js"></script>
+</head>
+<body>
+    <h2>Register</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    
+    <!-- Role Selection Dropdown -->
+    <select id="role">
+        <option value="user">User</option>
+        <option value="admin">Admin</option>
+    </select>
+
+    <button onclick="register()">Register</button>
+    <p id="error"></p>
+</body>
+</html>
